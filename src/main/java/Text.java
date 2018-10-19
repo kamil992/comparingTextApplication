@@ -9,8 +9,8 @@ public class Text {
 
     public Map<String, Integer> checkTexts(String fileName1, String fileName2) {
         Map<String, Integer> resultMap = new HashMap<>();
-        File file1 = new File("src/main/resources/textContent/" + fileName1 + ".txt");
-        File file2 = new File("src/main/resources/textContent/" + fileName2 + ".txt");
+        File file1 = new File("src/main/resources/textContainer/" + fileName1 + ".txt");
+        File file2 = new File("src/main/resources/textContainer/" + fileName2 + ".txt");
         List<String> fileList1 = this.charsFilter(file1);
         List<String> fileList2 = this.charsFilter(file2);
         List<String> noRepeatedList = this.getNotRepeatedWordsList(file1, file2);
